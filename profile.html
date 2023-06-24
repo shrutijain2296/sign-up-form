@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin-left: 30px;
+        }
+        #header{
+            display: flex;
+            justify-content: end;
+            border-bottom: 1px solid white;;
+        }
+        #header p{
+            margin: 10px;
+        }
+        #profile-page{
+            margin-top: 60px;
+        }
+        button{
+            margin: 40px 0px;
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id = "header">
+            <p>Signup</p>
+            <p>Profile</p>
+        </div>
+    </header>
+    <div id="profile-page" style="display: none;">
+        <div class="profile-container">
+          <h2>Profile</h2>
+          <p id="profile-fullname"></p>
+          <p id="profile-email"></p>
+          <p id="profile-password"></p>
+          <button onclick="logout()" class="logout-button">Logout</button>
+        </div>
+    </div>
+      
+    <script src = "./script.js"></script>
+</body>
+</html>
+  

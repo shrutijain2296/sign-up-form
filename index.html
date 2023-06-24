@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #header{
+            display: flex;
+            justify-content: end;
+            border-bottom: 1px solid white;;
+        }
+        #header p{
+            margin: 10px;
+        }
+        form{
+            margin: 100px 400px;
+            margin-bottom: 40px;
+            
+        }
+        input{
+            background-color: black;
+            border: none;
+            color: white;
+
+        }
+        h1{
+            margin-bottom: 35px;
+        } 
+        #signup{
+            margin: 20px 400px;
+            width: 100px;
+            height: 40px;
+        }
+        #message{
+            margin: 0px 400px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div id = "header">
+            <p>Signup</p>
+            <p>Profile</p>
+        </div>
+    </header>
+    
+    <form>
+        <h1>Signup</h1>
+        <label for = "full-name">Full Name</label>
+        <input type = "text" id = "full-name">
+        <hr>
+        <label for = "email">Email</label>
+        <input type = "text" id = "email">
+        <hr>
+        <label for = "password">Password</label>
+        <input type = "password" id = "password">
+        <hr>
+        <label for = "confirm-password">Confirm Password</label>
+        <input type = "password" id = "confirm-password">
+
+        <br>
+    </form>
+    <p id = "message"></p>
+    <button type = "submit" id = "signup" onclick = "submitBtn()">Signup</button>
+    <script src = "./script.js"></script>
+</body>
+</html>
